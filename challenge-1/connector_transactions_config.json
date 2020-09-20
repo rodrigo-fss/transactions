@@ -1,0 +1,14 @@
+{
+  "name": "transactions",
+  "config": {
+    "connector.class": "io.confluent.connect.gcs.GcsSinkConnector",
+    "tasks.max": "1",
+    "topics": "transactions",
+    "format.class": "io.confluent.connect.gcs.format.json.JsonFormat",
+    "flush.size": "30",
+    "gcs.bucket.name": "stone_test ",
+    "gcs.credentials.json": "{   \"type\": \"service_account\",   \"project_id\": \"faria-284214\",   \"private_key_id\": \"9cdedef5566181ca7bad0cca3105e7c0b6bf512e\",   \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDPEcKLjYw8jpIy\\ndKX6mONfgWU4JTSMz/jP2PJzuwpU1B3cMiganS/JhQr6dKP+QYCqD9wrWglDQpiA\\n8zg/65It/2e6GpdrVSg7HMgXKdzC89VmOclJsel+cBvoOEUi/4v8S2WEKKqkxHQS\\nFO29vfCKvrJrl8P/TcSEx8cCDihvsHL9UebKPXPbIHqnBgjrlqpnZ8hU4cFjQGF3\\nhGxn2aiMefrMb8el505X5APhzXGrldN+fElk2vPi5vw98IY0ebYK4XMRuc/R2R+m\\nfOxM9On51GjrReVG77YNq5TJWLWmIovXN2/m/fhIimxc/hqDWxiG6PPI+W1QbA49\\n/yJ0CkvxAgMBAAECggEAAJ256XZjW27FKpdEQymfS5Jz/aXGsUCRKfUoS4Xb8wKq\\nkBQqIGIlWUEnFjWwozoIqvjfG9XpvyR8la2jljUaOz7OTTR1DOG0+/AK/F6ohH/7\\nO5GicrCv1Ct7OcapFgCSpw6GX81LLLBU9BTR3EWraI5Gs6FA+Qp/MjHx+qSWJDbt\\n0SJT161WlXi0SH8kzbSSMfQ79dfCsiUalJ1mMX0mALc64jlFx3F8ExvXGg1POB3e\\nXDAIiusLQVq2bj4ncI6Peep5YsAza1VdvlQhA0I3SiqbMP2SBhLXEfzpMHye2tkT\\n3lcijvdKHwhyfkKcSm2LPZayBbFJFcBK7TZ2uI1aAQKBgQD2CVR88VKK8OoLPVjk\\nBxX/M6bIQGDGfoX3u984SZptPSvAiSkEsJ3TPwZXPWc8PkmrJRnkP0SQLUoNNC5d\\nGnuWIVLcX75jb+Uae3w16C3Hs76B6SZKR5dbqwOno+zY+Q2BjYLSHL1SpwVnjRp4\\nKMIGLqJ7u7kraPbUNa4dxfisEQKBgQDXdHTpL1OXxRNPpDFYSmkrK1A1zfpdeqcU\\nxNyYChsj23jDg2ZD/NFVjyGqKHRLL3rLEKmkOdKNMl+DcgQ37As1mtpWElxZTTrP\\nvjTG85M2xuDreecir3EbmIGfKuwR4v8YLiG2meCyVfFKxpA0Bstk4OSEq7LD00UT\\nTBIXCd8B4QKBgBSOywR1lZQOdT/jLF5BSVE9m5334x4yzDba99fYLpMaHWHFFCxU\\nJZvVFE6NzuZ1veoS+4raznvNjPZ1ebpF0DXHKwlG5r2gR+BimQpYEBszpaNtO8nR\\nGZCLRY7oX43xoXNFw7ySsi8JzaXNYHzRywSBOQplsR8zcgxhP980/4ZBAoGAN1vV\\n2kBtwxZBAvqWLzBXW18yqdB13uTv3zdB0tLt7EWs/tdZRGjGRKyVIspoLxVRALIU\\nVH0C64Kg5f46tT+yFaDnLqxjDBL65Hvjxaa6EZ4CFp7o05Guhz+lNodpxqLDlqvr\\nv6ZEBK5uZB8m2CdSxWW/cZNISGaVXgLytvazVSECgYEAwhV2ZOQK4qsuz0w4iqAG\\n8c3PP7UKcKG1GF1xsUGIPBun5OoPJuRsIaYYchZYKAO9decG1g5+v95nKpSKiwyE\\n2iBd2jCzV9Jag2vg2WKbPFKUkLOhuC/NgzaikCGXyhQO0x+WUGXcT7+xA25QG+CZ\\nCPVlB0ld04rj9z+3P/71XYU=\\n-----END PRIVATE KEY-----\\n\",   \"client_email\": \"kafka-connect@faria-284214.iam.gserviceaccount.com\",   \"client_id\": \"115011350568264276032\",   \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",   \"token_uri\": \"https://oauth2.googleapis.com/token\",   \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",   \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/kafka-connect%40faria-284214.iam.gserviceaccount.com\" }",
+    "confluent.topic.bootstrap.servers": "broker:9092",
+    "storage.class": "io.confluent.connect.gcs.storage.GcsStorage"
+  }
+}
