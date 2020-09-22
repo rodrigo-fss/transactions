@@ -7,3 +7,5 @@ img_data
 **/confluent-hub-components/
 *.tar.gz
 log.*
+**/.vscode/
+**/__pycache__/
