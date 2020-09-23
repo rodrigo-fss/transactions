@@ -1,7 +1,6 @@
 import numpy as np
 
 
-# function that filters vowels
 def filter_topic_in_batch(message, topic):
     if message.topic() == topic:
         return True
