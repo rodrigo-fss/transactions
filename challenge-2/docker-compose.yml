@@ -62,16 +62,3 @@ services:
       KAFKA_REST_HOST_NAME: rest-proxy
       KAFKA_REST_BOOTSTRAP_SERVERS: 'broker:29092'
       KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
-  metabase:
-    container_name: metabase
-    image: metabase/metabase
-    environment:
-      MB_DB_TYPE: postgres
-      MB_DB_DBNAME: metabase
-      MB_DB_PORT: 5432
-      MB_DB_USER: postgres
-      MB_DB_PASS: stone-transactions
-      MB_DB_HOST: 35.192.172.31
-      MB_ENCRYPTION_SECRET_KEY=: aLaLoaLosADpqSsADpqSosADpqS
-    ports:
-      - 3000:3000
