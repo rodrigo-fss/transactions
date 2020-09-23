@@ -1,6 +1,6 @@
 # Challenge 2 - Transaction Pipeline
 
-For the challenge 2 I choose to build an pipeline close to what you have seen in the previous challenge - the streaming one.
+For the challenge 2 I choose to build an pipeline close to what you have seen in the previous challenge - the streaming one - Just used this application instead of the Kafka Connect block.
 
 As the application just consume the events, it doesn't apply any validation on the data - like if there's balance left on the account to make the cash out - I choose to built a consumer that listen to all the topics, consume messages in chunks, 500 messages per call, and inserts them into the BigQuery - I tested consuming and inserting into the database one message at a time and the performance was far for ok. (BigQuery was used mainly because it's [streamming buffer](https://cloud.google.com/bigquery/streaming-data-into-bigquery) and columnar based architecture - no index management was needed. Redshift or postgres could be used as well).
 
