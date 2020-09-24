@@ -27,7 +27,7 @@ That said I have implemented a MVP solution just like the one presented with 3 p
 
 #### Data Governance
 
-You can apply data governance on this architecture in many levels, I would suggest that only data engineers and scientists should have access to raw data and staging area, as BigQuery and Redshift let you set permission on datasets level a data scientists of the origination squad may only have access to origination data. Other permission can be done directly on metabase, assigning people to groups and groups to datasets all you governance needs should be covered!
+You can apply data governance on this architecture in many levels, I would suggest that only data engineers and scientists should have access to raw data and staging area, as BigQuery and Athena let you set permission on datasets level a data scientists of the origination squad may only have access to origination data. Other permission can be done directly on metabase, assigning people to groups and groups to datasets all you governance needs should be covered!
 
 ## Streaming Pipeline
 
