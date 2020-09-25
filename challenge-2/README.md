@@ -35,14 +35,16 @@ Once you have the dashboard loaded and jq installed just run the following comma
 
     source create_topics_and_publish.sh
 
-This file brings up all the containers (Kafka Broker, Zookeper, Metabase and the consumer itself), creates the topics and extract the data from json files.
+This file brings up all the containers (Kafka Broker, Zookeper and the consumer itself), creates the topics and extract the data from json files.
 
 Once the topics are populated the consumer ingest them and by the time the script finish running - or a few seconds latter - the metabase dashboard should already be able to provide all the requested metrics.
 
 ### Re-Running the application
 To stop the application - the correct way - so you can put it back up, please use the following command `docker-compose down --remove-orphans` on the root of this challenge.
 
-After all containers have stopped you are good to put it back up with `source create_topics_and_publish.sh` again!
+After all containers have stopped you are good to put it back up with `source create_topics_and_publish.sh` again! *Note that you can put more messages on the topic running the indicated commands from create_topics_and_publish.sh without bringig all the containers down*
+
+
 ## Project structure
 
 You can check all the code behind the solution in the `src/` folder.
